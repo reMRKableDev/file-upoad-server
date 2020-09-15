@@ -38,7 +38,7 @@ app.locals.title = "Express - Generated with IronGenerator";
 app.use(
   cors({
     // this could be multiple domains/origins, but we will allow just our React app
-    origin: ["https://fileuploader-mrk.netlify.app/"],
+    origin: process.env.FRONTEND_POINT,
     credentials: true,
   })
 );
