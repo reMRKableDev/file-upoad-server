@@ -44,7 +44,6 @@ app.use(
 );
 
 app.use("/", require("./routes/index"));
-
 // include your new routes here:
 app.use("/api", require("./routes/thing-routes"));
 app.use("/api", require("./routes/file-uploads.routes"));
